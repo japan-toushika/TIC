@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../favicon_IT/TIC F.ico">
+    <title>Traffic Information Center</title>
+    <style>
+        summary {
+            width: auto;
+            height: 40px;
+            background-color: rgb(248, 244, 244);
+            margin-bottom: 2px;
+            transition: all 0.5s;
+            display: block;
+            list-style: none;
+        }
+        summary:hover {
+            background-color: rgb(252, 230, 230);
+            border-radius: 20px;
+        }
+        button {
+            background-color: white;
+            border: solid 2px black;
+            width: 135px;
+            height: 30px;
+        }
+        button:hover {
+            background-color: rgb(201, 240, 255);
+            border-radius: 4px;
+        }
+        a {
+            text-decoration: none;
+            color: black
+        }
+        #footer {
+            width: 100%;
+            text-align: center;
+            background-color: rgb(248, 244, 244);
+            margin-bottom: 0%;
+            margin-top: 5px;
+        }
+    </style>
+    <script>
+        setInterval(() => {
+            var time = new Date().toLocaleString();
+            document.getElementById('timehere').innerHTML = time;
+        })
+    </script>
+</head>
+<body>
+    <h1>Traffic Information Center</h1>
+    <h3 id="timehere"></h3>
+    <details>
+        <summary>&ensp;交通情報</summary>
+        &ensp;&ensp;&ensp;<button><a href="https://transit.yahoo.co.jp/diainfo" target="_blank">Yahoo!&ensp;交通情報</a></button>
+        <button><a href="https://www.jartic.or.jp/" target="_blank">JARTIC</a></button>
+    </details>
+    <details>
+        <summary>&ensp;乗換案内</summary>
+        &ensp;&ensp;&ensp;<button><a href="https://www.navitime.co.jp/">Navitime</a></button>
+        <button><a href="https://transit.yahoo.co.jp/">&ensp;Yahoo!&ensp;乗換検索</a></button>
+    </details>
+    <details>
+        <summary>&ensp;渋滞情報</summary>
+        &ensp;&ensp;&ensp;<button><a href="https://www.jartic.or.jp/" target="_blank">JARTIC</a></button>
+        <button><a href="https://www.mlit.go.jp/road/traffic/">国土交通省-渋滞</a></button>
+        <button><a href="https://roadway.yahoo.co.jp/">Yahoo!&ensp;渋滞情報</a></button>
+        <button><a href="https://www.atis.co.jp/traffic/road/">ATIS&ensp;渋滞情報</a></button>
+    </details>
+    <details>
+        <summary>&ensp;航空</summary>
+        &ensp;&ensp;&ensp;<button><a href="https://www.jal.com/ja/">JAL企業サイト</a></button>
+        <button><a href="https://www.jal.co.jp/jp/ja/">JAL</a></button>
+        <button><a href="https://www.ana.co.jp/">ANA</a></button>
+        <button><a href="https://www.flightradar24.com/">Flightrader24</a></button>
+    </details>
+    <details>
+        <summary>&ensp;鉄道</summary>
+        &ensp;&ensp;&ensp;<button><a href="https://traininfo.jreast.co.jp/train_info/">JR東日本</a></button>
+        <button><a href="https://trafficinfo.westjr.co.jp/list.html">JR西日本</a></button>
+    </details>
+    <details>
+        <summary>&ensp;船舶</summary>
+        &ensp;&ensp;&ensp;<button><a href="https://www.nyk.com/">日本郵船</a></button>
+        <button><a href="https://www.marinetraffic.com/">Marinetraffic</a></button>
+    </details>
+    <details>
+        <summary>&ensp;リアルタイム</summary>
+        &ensp;&ensp;&ensp;<button><a href="https://search.yahoo.co.jp/realtime/">Yahooリアルタイム</a></button>
+    </details>
+    <footer id="footer">
+        <a href="Traffic Information Center.html"><img width="30px" src="../favicon_IT/TIC F.ico" id="icon"></a>
+        <br>
+        <a  href="https://japan-toushika.github.io/CIC" target="_blank" style="text-decoration: none; color: black;">CIC</a>
+        <br>
+        <small>&copy;2024 All Rights Reserved
+            <br>ver.1.1</small>
+        </span>
+    </footer>
+</body>
+</html>
